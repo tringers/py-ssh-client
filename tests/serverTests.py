@@ -18,7 +18,7 @@ class ServerTests(unittest.TestCase):
             self.server.send(s, "timo")
             data = self.server.recieve(s)
             self.assertEqual("Password:", data)
-            self.server.send(s, "password")
+            self.server.send(s, "timo")
             data = self.server.recieve(s)
             self.assertEqual("timo@Server:", data)
             self.server.send(s, "ls -la")
